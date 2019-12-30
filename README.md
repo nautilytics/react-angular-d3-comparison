@@ -1,4 +1,4 @@
-# react-angular-d3-comparison
+# React and Angular comparison with D3 visualizations
 A comparison of using Angular or React to build a d3 visualization
 
 ![d3-visualization-example](d3-visualization-example.gif)
