@@ -1,0 +1,11 @@
+<div class="Visualization">
+  <svg [attr.width.px]="width" [attr.height.px]="height">
+    <g attr.transform="{{gTransform}}">
+      <g app-marker
+         *ngFor="let row of data; trackBy: trackByPoint"
+         [item]="formatMarkerItem(row)">
+      </g>
+      <g app-axes [item]="formatAxes()"></g>
+    </g>
+  </svg>
+</div>

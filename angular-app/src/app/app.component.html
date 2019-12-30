@@ -1,0 +1,11 @@
+<div class="App">
+  <div class="Header">
+    <button *ngFor="let distribution of distributions"
+            [ngClass]="distribution.isActive ? 'active' : ''"
+            (click)="onDistributionChange(distribution)">
+      {{distribution.id}}
+    </button>
+  </div>
+  <app-visualization [selectedDistribution]="activeDistribution">
+  </app-visualization>
+</div>
