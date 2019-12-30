@@ -8,7 +8,7 @@ const Marker = ({item}) => {
     useEffect(() => {
         select(markerRef.current)
             .transition()
-            .duration(750)
+            .duration(1000)
             .attr('cx', item.x)
             .attr('cy', item.y);
     }, [item]);
